@@ -18,7 +18,7 @@ class Cell
         NumNeighbors = 0;
     }
     public Cell(bool alive)
-    { 
+    {
         IsAlive = alive;
 
     }
