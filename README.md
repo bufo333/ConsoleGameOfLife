@@ -1,4 +1,4 @@
-# ConsoleGameOfLife
+# Game Of Life
 
 A simple console version of John conway's Game of Life written in c# and Dotnetcore 6.
 
