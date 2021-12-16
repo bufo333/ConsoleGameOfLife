@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class Cell
+namespace GameOfLife;
+
+public class Cell
 {
     public bool IsAlive { get; set; }
     public int NumNeighbors { get; set; }
