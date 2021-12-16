@@ -8,7 +8,7 @@ using Timer = System.Timers.Timer;
 
 // Declarations
 var (Left, Top) = Console.GetCursorPosition();
-var start=true;
+Console.CursorVisible = false;
 
 //Instantiate Game Object
 var game = new Game(Left, Top);
