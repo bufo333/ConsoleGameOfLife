@@ -1,4 +1,5 @@
-﻿using System.Timers;
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Timers;
 
 namespace GameOfLife;
 
@@ -21,9 +22,10 @@ public static class Utils
         return rand > 75;
     }
 
-    public static void Listener()
+    public static async Task<ConsoleKeyInfo> Listener()
     {
-       THold = Task.Run(() => Console.ReadKey(true));
+        THold = Task.Run(()  => Console.ReadKey(true));
+        return await THold;
     }
     public static void TimerElapsed(object sender, ElapsedEventArgs e) => Start = true;
 }
